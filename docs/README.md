@@ -6,7 +6,7 @@ This is an attempt to addresses such a problem through **architectural enforceme
 
 Built on commodity single-board computers (NanoPi, Radxa & Raspberry Pi), Jason also demonstrates that **enterprise-grade network security is achievable with consumer hardware** through careful architectural design and open-source tooling.
 
-## High Level Implementation
+## High Level Overview
 
 #### **Microsegmentation Through Policy Compilation**  
 Jason implements IPFire's zone-based security model to express network policy as deterministic inter-zone flows. Unlike traditional VLAN-based segmentation, this approach compiles high-level security intent directly to kernel enforcement mechanisms (nftables), eliminating policy-implementation gaps and enabling formal verification of network reachability constraints.
@@ -17,7 +17,7 @@ The access plane binds device identity at both L2 and L3 layers through WPA3-Ent
 #### **Distributed Defense Services**  
 Containerized security services provide layered protection without introducing co-tenancy risks. The architecture includes validating DNS resolution (Unbound with DNSSEC), programmable DNS sinkholes (Response Policy Zones), distributed honeypots for early threat detection, and adaptive behavioral analysis (CrowdSec) integrated with content scanning (ClamAV).
 
-## Platform Design
+## Modularity
 
 Jason's configuration is **fully declarative and reproducible**, enabling systematic evaluation of network security policies, IoT threat models, and zero-trust architectures. The platform supports controlled experiments in:
 
