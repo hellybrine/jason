@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jason Documentation</title>
+  <title>Jason</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Jason Project Documentation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- Theme -->
+
+  <!-- Docsify theme (base) -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="https://unpkg.com/prism-themes/themes/prism-night-owl.css">
 </head>
 <body>
   <div id="app"></div>
+
   <script>
     window.$docsify = {
       name: 'Jason',
       repo: 'hellybrine/jason',
       loadSidebar: true,
-      loadNavbar: true,
+      loadNavbar: false,
       subMaxLevel: 2,
-      search: 'auto',
+      search: 'auto'
     }
   </script>
-  <!-- Docsify -->
+
+  <!-- Docsify core -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
   <!-- Plugins -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
