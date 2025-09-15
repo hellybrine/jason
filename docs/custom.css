@@ -1,43 +1,51 @@
-/* Warm background palette, sidebar stays white */
-
-/* Base colors */
 :root {
-  --background: #f5f0e6;       /* warm soft off-white background */
-  --text: #2c2c2c;             /* dark text for readability */
-  --link: #ff6f61;             /* warm coral links */
-  --link-hover: #ff8b75;       /* hover highlight */
-  --heading: #d94887;          /* warm pink headings */
-  --code-bg: #eae0d5;          /* soft code block background */
-  --code-text: #2c2c2c;        /* dark code text */
-  --blockquote: #a08c8b;       /* muted warm blockquote */
+  --background: #151515;
+  --text: #E0E0E0;
+  --link: #80CBC4;
+  --link-hover: #4DB6AC;
+  --heading: #FF6EB4;
+  --code-bg: #263238;
+  --code-text: #FFAB91;
+  --blockquote: #CFD8DC;
+  --sidebar-bg: #1E1E1E;
+  --sidebar-text: #E0E0E0;
+  --sidebar-link-hover: #FF6EB4;
+  --sidebar-button-bg: #2C2C2C;
 }
 
-/* Body */
 body {
   background: var(--background);
   color: var(--text);
   font-family: 'Fira Code', monospace;
 }
 
-/* Sidebar stays white */
 .sidebar {
-  background: #ffffff !important;
-}
-.sidebar a {
-  color: #2c2c2c;
-}
-.sidebar a:hover {
-  color: var(--link-hover);
+  background: var(--sidebar-bg) !important;
 }
 
-/* Headings */
+.sidebar a {
+  color: var(--sidebar-text);
+}
+
+.sidebar a:hover {
+  color: var(--sidebar-link-hover);
+}
+
 .markdown-section h1,
-.markdown-section h2,
+.markdown-section h2, 
 .markdown-section h3 {
   color: var(--heading);
 }
 
-/* Code blocks */
+.markdown-section strong {
+  color: var(--heading);
+  font-weight: bold;
+}
+
+.markdown-section em {
+  color: var(--link);
+}
+
 .markdown-section pre {
   background: var(--code-bg);
   color: var(--code-text);
@@ -46,28 +54,82 @@ body {
   overflow-x: auto;
 }
 
-/* Inline code */
 .markdown-section code {
-  background: #eae0d5;
+  background: var(--code-bg);
   color: var(--code-text);
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* Blockquotes */
 .markdown-section blockquote {
   color: var(--blockquote);
   border-left: 4px solid var(--link);
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   padding: 0.6em 1em;
 }
 
-/* Keep searchbar visually integrated */
+/* Searchbar - no outline */
+.search,
 .docsify-search,
-.docsify-search input {
-  background-color: #ffffff !important;
-  color: #2c2c2c !important;
+input[type="search"] {
+  background-color: var(--sidebar-bg) !important;
+  color: var(--text) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-.docsify-search input::placeholder {
-  color: #888888 !important;
+
+.search input,
+.docsify-search input,
+input[type="search"] {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+  border: none !important;
+  padding: 8px 12px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.search input::placeholder,
+.docsify-search input::placeholder,
+input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.sidebar-toggle {
+  color: var(--sidebar-text) !important;
+  background-color: var(--background) !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+  margin: 4px !important;
+}
+
+.sidebar-toggle svg {
+  fill: var(--sidebar-text) !important;
+}
+
+.app-nav li,
+.app-nav a,
+button.sidebar-toggle {
+  color: var(--sidebar-text) !important;
+}
+
+.github-corner {
+  fill: #FF6EB4 !important;
+  color: var(--background) !important;
+}
+
+.github-corner svg {
+  fill: #FF6EB4 !important;
+}
+
+.github-corner:hover {
+  fill: #dc6898 !important;
+}
+
+.github-corner:hover svg {
+  fill: #dc6898 !important;
 }
