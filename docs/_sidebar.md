@@ -19,23 +19,20 @@
   - [IPFire Config](setup/ipfire.md)
   - [Docker Compose Stack](setup/docker-compose.md)
 
-- Operational Guide
-  - [Onboarding Devices](ops/onboarding.md)
-  - [Monitoring & Logging](ops/monitoring.md)
-  - [Updating & Patching](ops/updating.md)
-  - [Incident Handling](ops/incidents.md)
-
 - Security Considerations
   - [Strengths](security/strengths.md)
   - [Limitations](security/limitations.md)
-  - [Attack Surfaces & Mitigations](security/attack-mitigations.md)
+  - [Attack Surfaces & Mitigations](security/attack-mitigation.md)
 
 - Research Potential
   - [Edge & IoT Security](research/edge-iot.md)
-  - [Adaptive Defenses](research/adaptive-defenses.md)
-  - [Future Directions](research/future.md)
+  - [Future Direction](research/future.md)
 
 - Appendices
-  - [Full Configs](appendix/configs.md)
-  - [Helper Scripts](appendix/scripts.md)
-  - [References](appendix/references.md)
+  - [Appendix A](appendix/appendix_a.md)
+  - [Appendix B](appendix/appendix_b.md)
+  - [Appendix C](appendix/appendix_c.md)
+  - [Appendix D](appendix/appendix_d.md)
+  - [Appendix E](appendix/appendix_e.md)
+  - [Appendix F](appendix/appendix_f.md)
+  - [Appendix G](appendix/appendix_g.md)

@@ -2,6 +2,8 @@
 
 Contemporary IoT deployments exhibit a fundamental architectural flaw: **transitive trust propagation**. When heterogeneous sensor nodes join residential or enterprise networks, they inherit broad network access by default, this creates attack surfaces that extend far beyond the device's intended function. Compromise of a singular IoT endpoints frequently enables lateral movement, data exfiltration, and persistent access to critical network segments.
 
+![Jason](./assets/intro.jpeg)
+
 This is an attempt to addresses such a problem through **architectural enforcement of zero-trust principles** at the network edge. Rather than relying on device-level security controls, which have proven inadequate across ecosystems; Jason implements a deny-by-default fabric that isolates devices while providing controlled, auditable access to necessary services.
 
 Built on commodity single-board computers (NanoPi, Radxa & Raspberry Pi), Jason also demonstrates that **enterprise-grade network security is achievable with consumer hardware** through careful architectural design and open-source tooling.
